@@ -96,7 +96,7 @@ h1 span {
 
 .card:hover {
     transform: translateY(-10px); 
-
+}
 .card h2 {
     font-size: 1.4rem;
     margin-top: 0;
@@ -140,13 +140,9 @@ h1 span {
     font-weight: bold;
     font-size: 0.85rem;
 }
-body {}
-    
+body { 
     background-color: #000; 
-
-    
     background-image: radial-gradient(circle at center, #1a0000 0%, #000 70%);
-
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -156,7 +152,6 @@ body {}
     align-items: center;
     min-height: 100vh; 
 }
-/* Título de la sección Proyectos */
 .projects-title {
     text-align: center;
     font-size: 2.5rem;
@@ -165,7 +160,6 @@ body {}
     letter-spacing: 2px;
 }
 
-/* Grilla de proyectos */
 .projects-grid {
     display: flex;
     justify-content: center;
@@ -179,7 +173,6 @@ body {}
     width: 180px;
 }
 
-/* Los círculos de los iconos */
 .icon-wrapper {
     width: 120px;
     height: 120px;
@@ -196,7 +189,7 @@ body {}
     cursor: pointer;
 }
 
-/* El brillo rojo (Neon Glow) */
+
 .active-glow, .icon-wrapper:hover {
     border-color: #ff4d4d;
     box-shadow: 0 0 30px #ff0000;
@@ -208,7 +201,6 @@ body {}
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
-
 .project-item p {
     color: #888;
     font-size: 0.8rem;
