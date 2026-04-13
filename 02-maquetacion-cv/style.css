@@ -205,3 +205,82 @@ body {
     color: #888;
     font-size: 0.8rem;
 }
+/* Configuración de la Galería */
+.gallery-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.back-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #ff4d4d;
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.gallery-item {
+    text-align: left;
+}
+
+.image-box {
+    position: relative;
+    background: #111;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #333;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    filter: grayscale(20%);
+    transition: 0.5s;
+}
+
+/* El resplandor rojo inferior de tu diseño */
+.glow-line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background: #ff4d4d;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.gallery-item p {
+    margin-top: 15px;
+    color: #eee;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.image-box:hover {
+    border-color: #ff4d4d;
+    transform: translateY(-5px);
+}
+
+.image-box:hover img {
+    filter: grayscale(0%);
+}
